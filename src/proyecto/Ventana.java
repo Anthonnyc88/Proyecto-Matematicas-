@@ -176,10 +176,10 @@ public class Ventana extends javax.swing.JFrame {
         numeroC = Integer.parseInt(bntC.getText());
         
         ArrayList datos_Ecuacion = new ArrayList();
-        double valorA = 0, valorB = 0, valorC = 0;
-        double eje_simetria = 0;
-        double vertice = 0;
-        double exponente = 2;
+        int valorA = 0, valorB = 0, valorC = 0;
+        int eje_simetria = 0;
+        int vertice = 0;
+        int exponente = 2;
         System.out.println("f(x) = Ax^2 + Bx + C" + "\n");
         
         //Entrada de datos
@@ -189,18 +189,20 @@ public class Ventana extends javax.swing.JFrame {
         
         //Valida si es concava hacia arriba o abajo
         if(valorA < 0){
-            System.out.println("Es Concava asia bajo");
+            System.out.println("Es Concava hacia bajo");
         }else{
-            System.out.println("Es Concava asia arriba");
+            System.out.println("Es Concava hacia arriba");
         }
         
-        eje_simetria = (-valorB/valorA)/2;
+        eje_simetria = (-valorB)/(valorA*2);
+        
         System.out.println("Δ = b^2 - 4 * a * c");      
-        vertice = (double)Math.pow(valorB,exponente)-4 *valorA*valorC;
+        vertice = (int)Math.pow(valorB,exponente)-4 *valorA*valorC;
         System.out.println(vertice);
-        double vertice1 = (-vertice/valorA)/4;
+        int vertice1 = (-vertice/valorA)/4;
         textImprimir.setText("f(x) = Ax^2 + Bx + C" + "\n");
-        textImprimir.setText("El eje de simetria es: " + eje_simetria + " \n " + "Decrece en: " + "-∞,"+eje_simetria + "\n" + "Crece en: " + eje_simetria+",∞+" + "\n" + "El vertice es:" + vertice1 + "\n" + "El vertice es: " + "("+eje_simetria+","+vertice1+")" + "\n" + "El rango es: " + "["+vertice1+","+"∞+" + "\n" + "El eje Y es: " + "("+0+","+valorC+")");
+        textImprimir.setText("El eje de simetria es: " + eje_simetria + " \n " + "Decrece en: " + "-∞,"+eje_simetria + "\n" + "Crece en: " + eje_simetria+",∞+" + "\n" + "El vertice es:" + vertice1 + "\n" + "El vertice es: " + "("+eje_simetria+","+vertice1+")" + "\n" + "El rango es: " + "["+vertice1+","+"+∞)" + "\n" 
+                + "El eje Y es: " + "("+0+","+valorC+")"+"\n"+"El eje X es: " + "("+valorC+","+0+")");
 
     }//GEN-LAST:event_bntICalcularActionPerformed
 
