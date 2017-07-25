@@ -84,6 +84,7 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
+        bntICalcular.setForeground(new java.awt.Color(0, 0, 0));
         bntICalcular.setText("Calcular");
         bntICalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,6 +99,7 @@ public class Ventana extends javax.swing.JFrame {
         textImprimir.setRows(5);
         jScrollPane2.setViewportView(textImprimir);
 
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Salir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
