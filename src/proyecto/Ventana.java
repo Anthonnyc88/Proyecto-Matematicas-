@@ -81,7 +81,7 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
-        bntICalcular.setText("Ingresar");
+        bntICalcular.setText("Calcular");
         bntICalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bntICalcularActionPerformed(evt);
@@ -187,54 +187,6 @@ public class Ventana extends javax.swing.JFrame {
         double vertice1 = (-vertice/valorA)/4;
         textImprimir.setText("f(x) = Ax^2 + Bx + C" + "\n");
         textImprimir.setText("El eje de simetria es: " + eje_simetria + " \n " + "Decrece en: " + "-∞,"+eje_simetria + "\n" + "Crece en: " + eje_simetria+",∞+" + "\n" + "El vertice es:" + vertice1 + "\n" + "El vertice es: " + "("+eje_simetria+","+vertice1+")" + "\n" + "El rango es: " + "["+vertice1+","+"∞+" + "\n" + "El eje Y es: " + "("+0+","+valorC+")");
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        //Formula General
-        //Formula del discriminante 
-        //(B)**2  - 4 * A * C
-//        int discriminante = 0;
-//        int solucion1, solucion2 = 0;
-//        discriminante = (int) (Math.pow(numeroB, 2) - (4 * numeroA * numeroC));
-//
-//        if (discriminante < 0) {
-//            System.out.println("No tiene soluciones reales");
-//
-//        } else {
-//            solucion1 = (int) ((-numeroB + Math.sqrt(discriminante)) / 2 * numeroA);
-//            solucion2 = (int) ((-numeroB - Math.sqrt(discriminante)) / 2 * numeroA);
-//            System.out.println("La solucion es:\nX1:  %\nX2: %f" + solucion1 + solucion2);
-//            textImprimir.setText(" Solucion X1 " + solucion1  +   "\n" + " Solucion X2 " + solucion2  +  "\n" + " Interseccion con y :" + " 0 " +  " , " + numeroC);
-//        }
-//
-////        //Formula del eje de simetria
-////        // -B/2*A
-////        double eje_Simetria;
-////
-////        eje_Simetria = -numeroB / (2 * numeroA);
-////        textImprimir.setText("Eje de simetria :" + eje_Simetria + "\n" + "-00" + eje_Simetria);
-////
-////        //Formula del decrecimiento
-////        // (-00 , -B/(2*A)
-////        int decrese = -00;
-////        //textImprimir.setText("Decrecimiento :" +  "-00" + eje_Simetria);
-//
 
     }//GEN-LAST:event_bntICalcularActionPerformed
 
